@@ -18,7 +18,7 @@ app.get('/reminders', async (req, res) => {
             reminders: reminders
         }
     }
-    res.status(200).json(responseBody)
+    return res.status(200).json(responseBody)
 })
 
 app.post('/reminders', async (req, res) => {
